@@ -7,8 +7,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: echo a string
-        run: eccho "Action event API testing"
+        run: echo "Action event API testing"
       - name: multiline script
         run: | 
           node -v 
           npm -v 
+      - name: python command
+        run: |
+          import platform
+          print(platform.processor())
+        shell: python
