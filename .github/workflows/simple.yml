@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: echo a string
-        run: echo "Action event API testing"
+        run: eccho "Action event API testing"
       - name: multiline script
         run: | 
           node -v 
